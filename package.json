@@ -1,0 +1,42 @@
+{
+  "name": "veramo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "id:list": "ts-node ./src/list-identifiers",
+    "id:create": "ts-node ./src/create-identifier --alias",
+    "id:delete": "ts-node ./src/delete-identifier --alias",
+    "id:delete-all": "ts-node ./src/delete-all-identifiers",
+    "id:add-service": "ts-node ./src/add-service-identifier --alias",
+    "id:add-key": "ts-node ./src/add-key-identifier --alias",
+    "id:create-vc": "ts-node ./src/create-verifiable-credential --alias",
+    "id:verify-vc": "ts-node ./src/verify-verifiable-credential --vc",
+    "id:verify-vp": "ts-node ./src/verify-verifiable-presentation"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@veramo/core": "^3.1.0",
+    "@veramo/credential-w3c": "^3.1.0",
+    "@veramo/data-store": "^3.1.0",
+    "@veramo/did-manager": "^3.1.0",
+    "@veramo/did-provider-ethr": "^3.1.0",
+    "@veramo/did-provider-web": "^3.1.0",
+    "@veramo/did-resolver": "^3.1.0",
+    "@veramo/key-manager": "^3.1.0",
+    "@veramo/kms-local": "^3.1.0",
+    "ethers": "^5.5.4",
+    "ethr-did-resolver": "^5.0.4",
+    "express": "^4.17.3",
+    "sqlite3": "^5.0.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5",
+    "web-did-resolver": "^2.0.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
