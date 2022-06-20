@@ -1,0 +1,4 @@
+export default {
+    INFURA_PROJECT_ID: 'YOUR_INFURA_PROJECT_ID',
+    KMS_SECRET_KEY: 'YOUR_KMS_SECRET_KEY'    
+}
